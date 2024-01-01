@@ -1,0 +1,235 @@
+.main__banner {
+    padding-top: 74px;
+    overflow: hidden;
+}
+.main__banner__wrap {
+    position: relative;
+
+}
+.main__banner__inner-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.main__banner__title {
+    max-width: 600px;
+    width: 100%;
+    font-size: 50px;
+    font-weight: 500;
+    line-height: 70px;
+    color: #FFFFFFE5;
+    margin-bottom: 30px;
+}
+
+.main__banner__title span {
+    color: #FF6E30;
+}
+
+.main__banner__text {
+    max-width: 486px;
+    width: 100%;
+    color: #FFFFFF8C;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    margin-bottom: 60px;
+}
+
+.main__banner__form-search {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 498px;
+    height: 64px;
+    padding: 8px 12px 8px 18px;
+    background: #283036;
+    border-radius: 15px;
+    border: 1.5px solid rgba(255, 255, 255, 0.10);
+    margin-bottom: 110px;
+}
+
+.main__banner__form-search-input {
+    height: 100%;
+    width: 100%;
+    padding: 18px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-family: "Poppins-Regular", sans-serif;
+    color: #FFFFFF61;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+}
+
+.main__banner__form-search-btn {
+    cursor: pointer;
+    height: 48px;
+    width: 130px;
+    background: #FF6E30;
+    color: #fff;
+    font-family: "Poppins-Semibold";
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    transition: background .2s;
+}
+.main__banner__form-search-btn:hover {
+    background: #587298;
+}
+.main__banner__list {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+.main__banner__list-item-link img {
+    opacity: 0.5;
+    transition: .2s linear;
+}
+.main__banner__list-item-link:hover img {
+    opacity: 1;
+}
+.main__banner__posters img {
+    position: absolute;
+    z-index: -1;
+}
+.main__banner__posters-brac-left {
+    top: -74px;
+    right: 358px;
+    animation: bracMovement-left 3s infinite linear;
+}
+.main__banner__posters-brac-right {
+    top: -44px;
+    right: 254px;
+    animation: bracMovement-right 3s infinite linear;
+
+}
+.main__banner__posters-tab1-body {
+    top: -20px;
+    right: 50px;   
+}
+.main__banner__posters-tab1-top {
+    top: -20px;
+    right: 50px;   
+}
+.main__banner__posters-tab-top-circle {
+    top: 10px;
+    right: 184px;
+    animation: blink 3s infinite 1.5s;
+}
+.main__banner__posters-tab1-h1 {
+    top: 36px;
+    right: 120px;   
+
+}
+.main__banner__posters-tab1-subtext1 {
+    top: 138px;
+    right: 70px;   
+    animation: fade 2s infinite .6s;
+
+}
+.main__banner__posters-tab1-subtext2 {
+    top: 166px;
+    right: 88px;   
+    animation: fade 2s infinite .8s;
+
+}
+
+.main__banner__posters-tab1-subtext3 {
+    top: 192px;
+    right: 106px;   
+    animation: fade 2s infinite 1s;
+
+}
+.main__banner__posters-tab1-poster {
+    top: 230px;
+    right: 70px;   
+}
+.main__banner__posters-tab2-body {
+    top: 122px;
+    right: 0;   
+}
+.main__banner__posters-tab2-top {
+    top: 122px;
+    right: 0;
+}
+
+.main__banner__posters-tab-top-circle2 {
+    top: 162px;
+    right: 492px;
+    animation: blink 3s infinite;
+}
+
+.main__banner__posters-tab2-h1 {
+    top: 228px;
+    right: 446px;
+}
+.main__banner__posters-tab2-subtext1 {
+    top: 337px;
+    right: 198px;
+    animation: fade 2s infinite 1s;
+
+}
+.main__banner__posters-tab2-subtext2 {
+    top: 364px;
+    right: 242px;
+    animation: fade 2s infinite .8s;
+
+}
+.main__banner__posters-tab2-subtext3 {
+    top: 392px;
+    right: 282px;
+    animation: fade 2s infinite .6s;
+
+}
+.main__banner__posters-tab2-content2 {
+    top: 405px;
+    right: 335px;
+}
+.main__banner__posters-tab2-subtext4 {
+    top: 459px;
+    right: 360px;
+}
+.main__banner__posters-tab2-subtext5 {
+    top: 486px;
+    right: 396px;
+}
+
+@keyframes bracMovement-left {
+    0% {
+        right: 358px;
+    } 50% {
+        right: 380px;
+    } 100% {
+        right: 358px;
+    }
+}
+@keyframes bracMovement-right {
+    0% {
+        right: 254px;
+    } 50% {
+        right: 232px;
+    } 100% {
+        right: 254px;
+    }
+}
+@keyframes fade {
+    0% {
+        opacity: 1;
+    } 50% {
+        opacity: 0;
+    } 100% {
+        opacity: 1;
+    }
+}
+@keyframes blink {
+    0% {
+        scale: 1;
+    } 50% {
+        scale: 0;
+    } 100% {
+        scale: 1;
+    }
+}

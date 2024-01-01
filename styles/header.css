@@ -1,0 +1,150 @@
+.header {
+    padding: 32px 0;
+}
+
+.header__nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__nav-logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.header__nav-logo span {
+    color: #fff;
+    font-family: "Poppins-Semibold", sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 33px;
+}
+
+.header__nav-list {
+    display: flex;
+    align-items: center;
+    gap: 42px;
+}
+
+.header__nav-list-item-link,
+.header__nav-list-item span {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    color: #FFFFFF8C;
+    transition: .2s linear;
+}
+
+.header__nav-list-item-link {
+    border-bottom: 2px solid transparent;
+}
+
+.header__nav-list-item-link:hover {
+    color: #fff;
+    border-bottom: 2px solid #FFFFFF8C;
+}
+
+.header__nav-list-item:nth-child(2) {
+    position: relative;
+    top: 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding-bottom: 32px;
+}
+
+.header__nav-list-item:nth-child(2):hover span {
+    color: #fff;
+}
+
+.dropdown {
+    position: absolute;
+    top: 102px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    border: 2px solid #FFFFFF8C;
+    transition: top .4s ease, opacity .2s ease;
+    opacity: 0;
+    z-index: -1;
+}
+
+.header__nav-list-item:nth-child(2):hover .dropdown {
+    z-index: 1;
+    opacity: 1;
+    top: 32px;
+}
+
+.dropdown__item {
+    opacity: 0;
+    transition: opacity .4s ease .2s;
+}
+
+.header__nav-list-item:nth-child(2):hover .dropdown__item {
+    opacity: 1;
+}
+
+.dropdown__item-link {
+    font-size: 14px;
+    display: block;
+    padding: 10px;
+    color: #FFFFFFC7;
+    width: 100%;
+    transition: .2s linear;
+}
+
+.dropdown__item:nth-child(1) .dropdown__item-link {
+    border-bottom: 2px solid #FFFFFF8C;
+    border-radius: 6px 6px 0 0;
+}
+
+.dropdown__item:nth-child(2) .dropdown__item-link {
+    border-radius: 0 0 6px 6px;
+}
+
+.dropdown__item-link:hover {
+    color: #fff;
+    background: #587298;
+}
+
+.header__nav-actions {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.header__nav-actions-btn {
+    cursor: pointer;
+    border: none;
+    font-family: "Poppins-Semibold", sans-serif;
+    height: 48px;
+    width: 118px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    border-radius: 8px;
+    transition: .2s linear;
+}
+
+.header__nav-actions-btn:first-child {
+    background: none;
+    color: #FFFFFFC7;
+    background: transparent;
+}
+
+.header__nav-actions-btn:first-child:hover {
+    color: #fff;
+    background: #587298;
+}
+
+.header__nav-actions-btn:last-child {
+    background: #FF6E30;
+    color: #fff;
+}
+
+.header__nav-actions-btn:last-child:hover {
+    background: #587298;
+}

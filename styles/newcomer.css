@@ -1,0 +1,167 @@
+.main__newcomer {
+    padding-bottom: 200px;
+}
+
+.main__newcomer__wrap {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main__newcomer__desc-title {
+    color: #FFFFFFE5;
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 62px;
+    margin-bottom: 30px;
+}
+
+.main__newcomer__desc-text {
+    max-width: 428px;
+    width: 100%;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 30px;
+    color: #FFFFFF8C;
+    margin-bottom: 60px;
+}
+
+.main__newcomer__desc-link {
+    padding: 16px 40px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 27px;
+    background: #FF6E30;
+    border-radius: 8px;
+    transition: .2s;
+}
+
+.main__newcomer__desc-link:hover {
+    background: #587298;
+}
+
+.main__newcomer__cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 600px;
+    width: 100%;
+    gap: 70px 24px;
+}
+
+.main__newcomer__cards-card {
+    height: 284px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 28px 22px;
+    border-radius: 15px;
+    border: 2px solid transparent;
+    transition: .2s linear;
+}
+
+.main__newcomer__cards-card:hover {
+    border: 2px solid #28303699;
+    transform: translateY(-20px);
+    background: rgba(40, 48, 54, 0.60) url("../imgs/card-bg.png") no-repeat center/cover;
+}
+
+.main__newcomer__cards-card-heading {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.main__newcomer__cards-card-heading-title-block {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.main__newcomer__cards-card-heading-title-block_title {
+    color: #FFFFFFC7;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 36px;
+    transition: .2s;
+}
+.main__newcomer__cards-card:hover .main__newcomer__cards-card-heading-title-block_title {
+    color: #FFFFFFE5;
+}
+.main__newcomer__cards-card-heading-title-block_status {
+    color: #FFA5378C;
+    font-size: 18px;
+    font-family: "Poppins-Regular", sans-serif;
+    font-weight: 400;
+    line-height: 27px;
+    transition: .2s;
+}
+.main__newcomer__cards-card:hover .main__newcomer__cards-card-heading-title-block_status {
+    color: #FFA537;
+}
+
+.main__newcomer__cards-card-text {
+    color: #FFFFFF8C;
+    font-size: 14px;
+    font-family: "Poppins-Regular", sans-serif;
+    font-weight: 400;
+    line-height: 30px;
+    transition: .2s;
+}
+.main__newcomer__cards-card:hover .main__newcomer__cards-card-text {
+    color: #FFFFFFC7;
+}
+
+.main__newcomer__cards-card-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main__newcomer__cards-card-bottom-actions {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.main__newcomer__cards-card-bottom-actions-btn {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 42px;
+    height: 42px;
+    background: transparent;
+    border: none;
+    border-radius: 8px;
+    transition: .2s linear;
+}
+
+.main__newcomer__cards-card-bottom-actions-btn:hover {
+    background: #283036;
+    box-shadow: 0px 5px 10px -3px rgba(18, 18, 18, 0.15);
+}
+
+.main__newcomer__cards-card-bottom-actions-btn path {
+    transition: .2s;
+}
+
+.main__newcomer__cards-card-bottom-actions-btn:nth-child(1):hover path {
+    fill: #FD3B41;
+    fill-opacity: 1;
+}
+
+.main__newcomer__cards-card-bottom-link {
+    font-family: "Poppins-Semibold", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    background: transparent;
+    padding: 10px 35px;
+    color: #FFFFFF8C;
+    transition: .2s linear;
+    border-radius: 8px;
+}
+
+.main__newcomer__cards-card:hover .main__newcomer__cards-card-bottom-link {
+    background: #FF6E30;
+    color: #fff;
+}

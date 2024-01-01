@@ -1,0 +1,83 @@
+.main__people {
+    padding-bottom: 125px;
+}
+
+.main__people__wrap {
+    display: flex;
+    align-items: center;
+    overflow-x: scroll;
+    padding-bottom: 100px;
+
+}
+
+.main__people__wrap::-webkit-scrollbar {
+    background: #283036;
+    border-radius: 4px;
+    height: 8px;
+}
+.main__people__wrap::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background: #FF6E30;
+}
+
+.main__people__slide {
+    min-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 58px;
+}
+
+.main__people__slide-poster {
+    position: relative;
+}
+
+.main__people__slide-poster-title-block {
+    position: absolute;
+    right: 4px;
+    bottom: 30px;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.10);
+    background: rgba(40, 48, 54, 0.20);
+    backdrop-filter: blur(25px);
+    padding: 10px 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.main__people__slide-poster-title-block-title {
+    color: #FFFDFDC7;
+    font-size: 26px;
+    font-weight: 500;
+    line-height: 39px;
+    letter-spacing: 0.015em;
+}
+
+.main__people__slide-poster-title-block-text {
+    color: #FFFDFD8C;
+    font-size: 16px;
+    font-family: "Poppins-Regular", sans-serif;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.main__people__slide-desc {
+    position: relative;
+}
+
+.main__people__slide-desc-quotation {
+    position: absolute;
+    top: -40px;
+    left: -40px;
+}
+.main__people__slide-desc-text {
+    max-width: 394px;
+    width: 100%;
+    font-family: "Roboto-Regular", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0.015em;
+    color: #FFFFFFC7;
+}

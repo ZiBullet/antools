@@ -1,0 +1,29 @@
+.main__brand {
+    padding-bottom: 200px;
+}
+
+.main__brand__wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    width: 100%;
+    height: 254px;
+    border-radius: 25px;
+    border: 2px solid #2C353D33;
+    background: #2C353D33 url("../imgs/brand-bg.png") no-repeat center/cover;
+}
+
+.main__brand__title {
+    color: #FFFFFFCC;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 36px;
+}
+.main__brand__logos {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 108px;
+}
