@@ -93,7 +93,6 @@
 }
 .main__banner__posters img {
     position: absolute;
-    z-index: -1;
 }
 .main__banner__posters-brac-left {
     top: -74px;
