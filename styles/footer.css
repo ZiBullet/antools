@@ -6,6 +6,10 @@
 
 .footer__nav {
     display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 30px;
 }
 .footer__nav-copyright {
     margin-right: 156px;
@@ -125,5 +129,7 @@
 }
 .footer__nav-company-info-links-item-link:hover {
     color: #fff;
-
 }
+/* @media screen and (max-width: ) {
+    
+} */

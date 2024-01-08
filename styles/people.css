@@ -5,6 +5,7 @@
 .main__people__wrap {
     display: flex;
     align-items: center;
+    gap: 50px;
     overflow-x: scroll;
     padding-bottom: 100px;
 
@@ -31,7 +32,9 @@
 .main__people__slide-poster {
     position: relative;
 }
-
+.main__people__slide-poster img {
+    width: 100%;
+}
 .main__people__slide-poster-title-block {
     position: absolute;
     right: 4px;
@@ -80,4 +83,15 @@
     line-height: 30px;
     letter-spacing: 0.015em;
     color: #FFFFFFC7;
+}
+@media screen and (max-width: 880px) {
+    .main__people__wrap {
+        padding-bottom: 60px;
+    }
+    .main__people__slide {
+        flex-direction: column;
+    }
+    .main__people__wrap::-webkit-scrollbar {
+        height: 2px;
+    }
 }

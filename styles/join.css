@@ -7,6 +7,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    text-align: center;
 }
 
 .main__join__title {
@@ -22,7 +23,6 @@
     font-size: 18px;
     font-weight: 500;
     line-height: 30px;
-    text-align: center;
     margin-bottom: 100px;
     max-width: 428px;
     width: 100%;
@@ -74,4 +74,9 @@
 }
 .main__join__form-email-submit:hover {
     background: #587298;
+}
+@media screen and (max-width: 1024px) {
+    .main__join {
+        height: 600px;
+    }
 }

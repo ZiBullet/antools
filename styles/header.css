@@ -148,3 +148,25 @@
 .header__nav-actions-btn:last-child:hover {
     background: #587298;
 }
+@media screen and (max-width: 962px) {
+    .header__nav-list {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 16px;
+    }
+    .header__nav-list-item:nth-child(2) {
+        top: 10px;
+        padding-bottom: 20px;
+    }
+}
+@media screen and (max-width: 662px) {
+    .header__nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .header__nav-actions-btn {
+        height: 24px;
+        width: 60px;
+        font-size: 12px;
+    }
+}
