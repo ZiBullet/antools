@@ -23,3 +23,11 @@ body {
     padding: 0 15px;
     margin: 0 auto;
 }
+
+::-webkit-scrollbar {
+    background: #FFFFFF8C;
+    width: 10px;
+}
+::-webkit-scrollbar-thumb {
+    background: #ff6e30;
+}
