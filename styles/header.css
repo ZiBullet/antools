@@ -5,16 +5,16 @@
 
 .header__menu-bg {
     position: absolute;
-    opacity: 0;
+    top: -200%;
     width: 100%;
     height: 100svh;
     background: #1E252B;
-    z-index: -10;
-    transition: .5s;
+    z-index: -1;
+    transition: .5s linear;
 }
 
 .header.menu-active .header__menu-bg {
-    opacity: 1;
+    transform: translateY(0);
     z-index: 15;
 }
 
@@ -44,6 +44,7 @@
     display: flex;
     align-items: center;
     gap: 42px;
+    transition: .3s;
 }
 
 .header__nav-list-item-link,
@@ -133,6 +134,7 @@
     display: flex;
     align-items: center;
     gap: 16px;
+    transition: .3s;
 }
 
 .header__nav-actions-btn {
@@ -145,7 +147,7 @@
     font-weight: 600;
     line-height: 24px;
     border-radius: 8px;
-    transition: .2s linear;
+    transition: .3s;
 }
 
 .header__nav-actions-btn:first-child {
@@ -227,6 +229,7 @@
     }
     .header__nav-list {
         display: none;
+        z-index: -1;
         flex-direction: column;
         justify-content: center;
         gap: 16px;
@@ -238,13 +241,17 @@
     }
     .header.menu-active .header__nav-list {
         display: flex;
+        z-index: 0;
     }
     .header__nav-actions {
         display: none;
+        z-index: -1;
         flex-direction: column-reverse;
         gap: 10px;
     }
     .header.menu-active .header__nav-actions {
         display: flex;
+        opacity: 1;
+        z-index: 0;
     }
 }

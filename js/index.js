@@ -1,4 +1,4 @@
-const header = document.querySelector('.header'), 
+const header = document.querySelector('.header'),
     menuBtn = document.querySelector('.header__nav-menu');
 
 menuBtn.onclick = () => {
